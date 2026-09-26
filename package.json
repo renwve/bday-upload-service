@@ -4,9 +4,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "node --env-file=.env.local server.mjs"
+    "start": "node server.mjs",
+    "dev": "node --env-file=.env.local server.mjs"
   },
   "dependencies": {
+    "busboy": "^1.6.0",
     "cors": "^2.8.5",
     "express": "^4.19.2",
     "googleapis": "^140.0.0"
